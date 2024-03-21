@@ -2,7 +2,7 @@ import { Telegraf } from 'telegraf';
 import moment from 'moment';
 
 const bot = new Telegraf('7077150557:AAGTUqCN7DSMps9w7tCOBaxpLNiX16QO7Mc');
-const ironovRenewalTime = 1711065599;
+const ironovRenewalTime = 1711065599 - 10800;
 
 const calculateStringTime = () => {
     const diffTime = ironovRenewalTime - moment().utc(true).unix();
